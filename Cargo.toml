@@ -1,0 +1,16 @@
+[package]
+name = "lau-kalman-hodge"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-kalman-hodge"
+description = "Hodge-Kalman-Spectral bridge: Kalman filter as Hodge star operator on observation bundles"
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+serde = { version = "1", features = ["derive"] }
+rustfft = "6"
+num-complex = { version = "0.4", features = ["serde"] }
+
+[dev-dependencies]
+serde_json = "1"
